@@ -1,1 +1,3 @@
-/automatizacionScreenplay/.gradle/
+/.gradle/
+/build/
+/.idea/
