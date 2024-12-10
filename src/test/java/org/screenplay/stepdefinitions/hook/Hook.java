@@ -10,8 +10,7 @@ import org.hamcrest.Matchers;
 import org.screenplay.hook.OpenWeb;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
-import static org.screenplay.helpers.Constants.TIME_SHORT;
-import static org.screenplay.helpers.Constants.TITLE;
+import static org.screenplay.helpers.Constants.*;
 import static org.screenplay.helpers.Time.waiting;
 
 public class Hook {
@@ -24,7 +23,7 @@ public class Hook {
     @Given("{string} abre el sitio web de pruebas")
     public void thatTheUserOpensTheTestWebsite(String actor) {
         OnStage.theActorCalled(actor).attemptsTo(
-                OpenWeb.browserURL()
+                OpenWeb.browserURL(WEB_URL)
         );
         waiting(TIME_SHORT);
         theActorInTheSpotlight().should(

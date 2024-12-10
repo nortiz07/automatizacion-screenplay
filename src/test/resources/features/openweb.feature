@@ -9,7 +9,7 @@ Característica: Abrir una pagina web
     Dado "Oscar" abre el sitio web de pruebas
 
   @successful
-  Escenario: abrir con el navegador chrome la pagina web
+  Escenario: Validacion en la funcion del ID card elements
     Y desea validar la funcion de la carta de elementos
     Cuando selecciona aleatoriamente alguna de las subfunciones
     Entonces visualizara en la cabecera el nombre de la opcion elegida
