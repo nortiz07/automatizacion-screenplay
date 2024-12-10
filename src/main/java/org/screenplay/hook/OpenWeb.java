@@ -16,6 +16,11 @@ import static org.screenplay.helpers.Constants.WEB_URL;
 public class OpenWeb implements Task {
 
     private EnvironmentVariables enviromentVariables;
+
+    public OpenWeb(String webUrl) {
+        this.webUrl = webUrl;
+    }
+
     private String webUrl;
 
     @Override
